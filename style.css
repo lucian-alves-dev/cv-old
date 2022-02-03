@@ -52,6 +52,10 @@ small {
     font-size: 80%;
 }
 
+strong {
+    color: var(--secondary-bg-color);
+}
+
 a {
     text-decoration: none;
     color: var(--dark-txt-color);
