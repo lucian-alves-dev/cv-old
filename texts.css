@@ -1,8 +1,0 @@
-#sectionHardSkills.interactive:hover h2::after,
-#sectionSoftSkills.interactive:hover h2::after {
-    content: "(click on a skill to know more)";
-}
-
-#sectionProfile.interactive:hover h2::after {
-    content: "(click on a trait to know more)";
-}

@@ -1,0 +1,21 @@
+*[data-language] { display: none; }
+html[lang='pt'] *[data-language='pt'] { display: contents; }
+html[lang='en'] *[data-language='en'] { display: contents; }
+
+html[lang='en'] #sectionHardSkills.interactive:hover h2::after,
+html[lang='en'] #sectionSoftSkills.interactive:hover h2::after {
+    content: "(click on a skill to know more)";
+}
+
+html[lang='pt'] #sectionHardSkills.interactive:hover h2::after,
+html[lang='pt'] #sectionSoftSkills.interactive:hover h2::after {
+    content: "(clique em uma habilidade para saber mais)";
+}
+
+html[lang='en'] #sectionProfile.interactive:hover h2::after {
+    content: "(click on a trait to know more)";
+}
+
+html[lang='pt'] #sectionProfile.interactive:hover h2::after {
+    content: "(clique em uma característica para saber mais)";
+}

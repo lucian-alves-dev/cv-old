@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The interactive rèsumè of Lucian Alves">
-    <meta name="keywords" content="Software Developer, Teacher, HTML, CSS, JavaScript, PHP">
+    <meta name="description" content="The interactive resume of Lucian Alves">
+    <meta name="keywords" content="Software Developer, Software Engineer, Computer Teacher, HTML, CSS, JavaScript, PHP, Laravel, MySQL, full-stack, back-end, front-end">
     <meta name="author" content="Lucian Alves">
     <title>Lucian Alves - Curriculum</title>
-    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="texts.css">
-    <script src="script.js"></script>
-</head>
-<body>
+    
+    <!-- Core -->
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js"></script>
 
+    <!-- Googl Fonts -->
+    <link defer href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link defer href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined&display=swap" rel="stylesheet">
+
+    <!-- Translations -->
+    <link rel="stylesheet" href="/assets/translations.css">
+    <script src="/assets/translations.js"></script>
+
+    <!-- Animations -->
+    <link rel="stylesheet" href="/assets/animations.css">
+    <script src="/assets/animations.js"></script>
+</head>
+
+<body>
     <div class="bgHeader">
         <header id="pageHeader" class="pageLimits">
             <div class="left">
@@ -27,29 +38,62 @@
                     <span class="material-icons-outlined iconMenu">menu</span>
                     <div class="list">
                         <nav>
-                            <a href="#basic-data">Contact</a>
-                            <a href="#presentation">About Me</a>
-                            <a href="#work-experience">Work Experience</a>
-                            <a href="#academic-education">Academic Education</a>
-                            <a href="#hard-skills">Hard Skills</a>
-                            <a href="#soft-skills">Soft Skills</a>
-                            <a href="#profile">Profile</a>
-                            <a href="#my-likes-and-dislikes">My Likes and Dislikes</a>
-                            <a href="#additional-info">Additional Info</a>
+                            <div class="box-lang-selector">
+                                <div>
+                                    <div data-language='en'>Language:</div>
+                                    <div data-language='pt'>Linguagem: </div>
+                                </div>
+                                <label><input type="radio" name="language" value="en" checked><span>EN</span></label>
+                                <label><input type="radio" name="language" value="pt"><span>PT</span></label>
+                            </div>
+                            <a href="#">
+                                <div data-language='en'>Contact</div>
+                                <div data-language='pt'>Contato</div>
+                            </a>
+                            <a href="#about-me">
+                                <div data-language='en'>About Me</div>
+                                <div data-language='pt'>Sobre Mim</div>
+                            </a>
+                            <a href="#work-experience">
+                                <div data-language='en'>Work Experience</div>
+                                <div data-language='pt'>Experiência Profissional</div>
+                            </a>
+                            <a href="#academic-education">
+                                <div data-language='en'>Academic Education</div>
+                                <div data-language='pt'>Formação Acadêmica</div>
+                            </a>
+                            <a href="#hard-skills">
+                                <div data-language='en'>Hard Skills</div>
+                                <div data-language='pt'>Habilidades Técnicas</div>
+                            </a>
+                            <a href="#soft-skills">
+                                <div data-language='en'>Soft Skills</div>
+                                <div data-language='pt'>Habilidades Comportamentais</div>
+                            </a>
+                            <a href="#profile">
+                                <div data-language='en'>Profile</div>
+                                <div data-language='pt'>Perfil</div>
+                            </a>
+                            <a href="#my-likes-and-dislikes">
+                                <div data-language='en'>My Likes and Dislikes</div>
+                                <div data-language='pt'>Coisas que gosto e não gosto</div>
+                            </a>
+                            <a href="#important-note">
+                                <div data-language='en'>Important note</div>
+                                <div data-language='pt'>Nota Importante</div>
+                            </a>
                         </nav>
                     </div>
                 </div>
             </div>
         </header>
     </div>
-    
-    <main id="pageMain" class="pageLimits">
 
-        <div class="anchor" id="basic-data"></div>
+    <main id="pageMain" class="pageLimits">
         <section id="sectionBasicData">
             <div class="col">
-                <figure>
-                    <img id="imgPhoto" src="img/lucian-alves.jpg" alt="">
+                <figure id="figPhoto">
+                    <img id="imgPhoto" src="img/lucian-alves.png" alt="">
                     <figcaption>Lucian Alves</figcaption>
                 </figure>
             </div>
@@ -57,36 +101,55 @@
                 <div class="col">
                     <a class="piece" href="#wx-php-full-stack">
                         <span class="icon material-icons-outlined">code</span>
-                        <small>Software Developer</small>
+                        <small>
+                            <span data-language='en'>Software Developer</span>
+                            <span data-language='pt'>Desenvolvedor de Software</span>
+                        </small>
                     </a>
                     <a class="piece" href="#wx-computer-teacher">
                         <span class="icon material-icons-outlined">school</span>
-                        <small>Computer Teacher</small>
+                        <small>
+                            <span data-language='en'>Computer Teacher</span>
+                            <span data-language='pt'>Professor de Informática</span>
+                        </small>
                     </a>
                     <a class="piece" href="#wx-computer-technician">
                         <span class="icon material-icons-outlined">computer</span>
-                        <small>Computer Technician</small>
+                        <small>
+                            <span data-language='en'>Computer Technician</span>
+                            <span data-language='pt'>Técnico em Informática</span>
+                        </small>
                     </a>
-                    <a class="piece" target="_blank" href="">
-                        <span class="icon material-icons-outlined">computer</span>
+                    <a class="piece" target="_blank" href="https://www.linkedin.com/in/lucian-alves-dev"
+                        rel="noreferrer">
+                        <span class="icon material-icons-outlined">link</span>
                         <small>Linkedin</small>
                     </a>
                 </div>
                 <div class="col">
                     <div class="piece">
                         <span class="icon material-icons-outlined">cake</span>
-                        <small>28 yers old</small>
+                        <small>
+                            <span data-language='en'>28 yers old</span>
+                            <span data-language='pt'>28 anos</span>
+                        </small>
                     </div>
-                    <a class="piece" href="https://goo.gl/maps/4R88YaCWCDBv5dHH9" target="_blank" rel="noreferrer">
+                    <a class="piece" href="https://goo.gl/maps/4R88YaCWCDBv5dHH9" target="_blank"
+                        rel="noreferrer">
                         <span class="icon material-icons-outlined">place</span>
-                        <small>Marília, SP - Brazil</small>
+                        <small>
+                            Marília, SP -
+                            <span data-language='en'>Brazil</span>
+                            <span data-language='pt'>Brasil</span>
+                        </small>
                     </a>
                     <a class="piece" href="mailto:contato@lucian-alves.dev">
                         <span class="icon material-icons-outlined">email</span>
                         <small>contact@lucian-alves.dev</small>
                     </a>
-                    <a class="piece" href="" target="_blank" rel="noreferrer">
-                        <span class="icon material-icons-outlined">computer</span>
+                    <a class="piece" href="https://github.com/lucian-alves-dev" target="_blank"
+                        rel="noreferrer">
+                        <span class="icon material-icons-outlined">link</span>
                         <small>GitHub</small>
                     </a>
                 </div>
@@ -94,90 +157,195 @@
         </section>
         <hr>
 
-        <div class="anchor" id="presentation"></div>
-        <section id="sectionPresentation">
+        <div class="anchor" id="about-me"></div>
+        <section id="sectionAboutMe">
             <p>
-                Full stack software developer with <strong>5 years of experience in PHP</strong> and expert in
-                high fidelity front-end implementation with <strong>advanced knowledge in CSS and Javascript</strong>.
-                I'm also an <strong>experienced IT teacher</strong> driven by the passion of sharing knowledge and
-                helping people understand the basics and the "secrets" of working with a computer.
+                <span data-language='en'>
+                    <strong>Full stack software developer with 5 years of experience in PHP</strong> and expert in
+                    high fidelity front-end implementation with <strong>advanced knowledge in CSS and
+                        JavaScript</strong>.
+                    I'm also an <strong>experienced computer teacher</strong> driven by the passion of sharing knowledge
+                    and
+                    helping people understand the basics and the "secrets" of working with a computer.
+                </span>
+                <span data-language='pt'>
+                    <strong>Desenvolvedor de software full stack com 5 anos de experiência em PHP</strong> e
+                    especialista em
+                    implementação front-end de alta fidelidade com <strong>conhecimento avançado em CSS e
+                        JavaScript</strong>.
+                    Também sou um <strong>experiente professor de informática</strong> movido pela paixão de
+                    compartilhar
+                    conhecimento e ajudar as pessoas a entender o básico e os "segredos" de se trabalhar com um
+                    computador.
+                </span>
             </p>
         </section>
         <hr>
 
         <div class="anchor" id="work-experience"></div>
-        <section>
+        <section id="sectionWorkEducation">
             <h2>
                 <span class="icon material-icons-outlined">work_outline</span>
-                <small>Work Experience</small>
+                <small>
+                    <span data-language='en'>Work Experience</span>
+                    <span data-language='pt'>Experiência Profissional</span>
+                </small>
             </h2>
 
             <div class="anchor" id="wx-php-full-stack"></div>
             <details>
                 <summary>
-                    <span>Software Developer</span>
-                    <small>5 years (click to know more)</small>
+                    <h3>
+                        <span data-language='en'>Software Developer</span>
+                        <span data-language='pt'>Desenvolvedor de Software</span>
+                    </h3>
+                    <small>
+                        <span data-language='en'>5 years (click to know more)</span>
+                        <span data-language='pt'>5 anos (clicque para saber mais)</span>
+                    </small>
                 </summary>
                 <p>
-                    I got my first job as a developer in december of 2016, working as a
-                    full stack PHP developer for a payment terminal company called
-                    <a href="https://europag.com.br/" target="_blank" rel="noreferrer">Europag</a>. <br><br>
+                    <span data-language='en'>
+                        I got my first job as a developer in December of 2016, working as a
+                        full stack PHP developer for a payment terminal company called
+                        <a href="https://europag.com.br/" target="_blank" rel="noreferrer">Europag</a>. <br><br>
 
-                    In feburary of 2018 I got a new job at
-                    <a href="https://www.instagram.com/dsintecnologia/" target="_blank" rel="noreferrer">DSIN Technology</a>,
-                    an IT company specialized in solutions for traffic fines management. Besides working as a PHP developer,
-                    I have also developed the front-end of
-                    <a href="https://play.google.com/store/apps/details?id=br.com.bmtisolucoes.estacionelegal">Estacione Legal</a>, 
-                    an app used for public parking management in many cities across Brazil. 
-                    <a href="http://carreira.dsin.com.br/" target="_blank" rel="noreferrer">The site DSIN uses as talent database</a>
-                    was also developed by me (and you can actually see me holding a phone
-                    in one of the site's banners). <br><br>
+                        In February of 2018 I got a new job at
+                        <a href="https://www.instagram.com/dsintecnologia/" target="_blank" rel="noreferrer">DSIN</a>,
+                        an IT company specialized in solutions for traffic fines management. Besides working as a PHP
+                        developer,
+                        I have also developed the front-end of
+                        <a href="https://play.google.com/store/apps/details?id=br.com.bmtisolucoes.estacionelegal" target="_blank" rel="noreferrer">Estacione Legal</a>,
+                        an app used for public parking management in many cities across Brazil.
+                        <a href="http://carreira.dsin.com.br/" target="_blank" rel="noreferrer">The site DSIN uses astalent database</a>
+                        was also developed by me (and you can actually see me holding a phone
+                        in one of the site's banners). <br><br>
 
-                    Yet in november of 2018, I've decided to leave DSIN and work for
-                    <a href="https://proponto.com.br/" target="_blank" rel="noreferrer">Próponto</a>,
-                    a solution developer company for incentive campaigns. Once again working with full stack PHP,
-                    there were many projects I took part in: from promotional microsites to large incentive
-                    management platforms used by national and multinational companies such as
-                    <a href="https://www.ambev.com.br/" target="_blank" rel="noreferrer">Ambev</a>,
-                    <a href="https://www.usa.canon.com/internet/portal/us/home" target="_blank" rel="noreferrer">Canon</a>,
-                    <a href="https://www.mars.com/" target="_blank" rel="noreferrer">Mars</a> and many others.
+                        Yet in November of 2018, I've decided to leave DSIN and work for
+                        <a href="https://proponto.com.br/" target="_blank" rel="noreferrer">Próponto</a>,
+                        a solution developer company for incentive campaigns. Once again working with full stack PHP,
+                        there were many projects I took part in: from promotional microsites to large incentive
+                        management platforms used by national and multinational companies such as
+                        <a href="https://www.ambev.com.br/" target="_blank" rel="noreferrer">Ambev</a>,
+                        <a href="https://www.usa.canon.com/internet/portal/us/home" target="_blank"
+                            rel="noreferrer">Canon</a>,
+                        <a href="https://www.mars.com/" target="_blank" rel="noreferrer">Mars</a> and many others.
+                    </span>
+
+                    <span data-language='pt'>
+                        Consegui meu primeiro emprego como programador em dezembro de 2016,
+                        trabalhando como desenvolvedor PHP full stack para uma empresa de maquininhas
+                        de cartão chamada
+                        <a href="https://europag.com.br/" target="_blank" rel="noreferrer">Europag</a>. <br><br>
+
+                        Em fevereiro de 2018 consegui um novo emprego na
+                        <a href="https://www.instagram.com/dsintecnologia/" target="_blank" rel="noreferrer">DSIN</a>,
+                        empresa de TI especializada em soluções para gestão de multas de trânsito.
+                        Além de trabalhar como desenvolvedor PHP, também desenvolvi o front-end do
+                        <a href="https://play.google.com/store/apps/details?id=br.com.bmtisolucoes.estacionelegal">Estacione
+                            Legal</a>,
+                        aplicativo utilizado para controle de Zona Azul em diversas cidades do Brasil.
+                        <a href="http://carreira.dsin.com.br/" target="_blank" rel="noreferrer">O site que a DSIN usa
+                            como banco de talentos</a>
+                        também foi desenvolvido por mim (você até consegue me ver segurando um celular em um dos banners
+                        do site). <br><br>
+
+                        Ainda em novembro de 2018, decidi sair da DSIN e trabalhar na
+                        <a href="https://proponto.com.br/" target="_blank" rel="noreferrer">Próponto</a>,
+                        empresa desenvolvedora de soluções para campanhas de incentivo. Mais uma vez trabalhando com
+                        PHP full stack, foram vários os projetos dos quais participei: desde microsites promocionais
+                        até grandes plataformas de gestão de incentivos utilizadas por empresas nacionais e
+                        multinacionais como
+                        <a href="https://www.ambev.com.br/" target="_blank" rel="noreferrer">Ambev</a>,
+                        <a href="https://www.canon.com.br/" target="_blank" rel="noreferrer">Canon</a>,
+                        <a href="https://bra.mars.com/" target="_blank" rel="noreferrer">Mars</a> e muitas outras.
+                    </span>
                 </p>
             </details>
 
             <div class="anchor" id="wx-computer-teacher"></div>
             <details>
                 <summary>
-                    <span>Computer Teacher</span>
-                    <small>3 years (click to know more)</small>
+                    <h3>
+                        <span data-language='en'>Computer Teacher</span>
+                        <span data-language='pt'>Professor de Informática</span>
+                    </h3>
+                    <small>
+                        <span data-language='en'>4 years (click to know more)</span>
+                        <span data-language='pt'>4 anos (clique para saber mais)</span>
+                    </small>
                 </summary>
                 <p>
-                    Back in 2009, when I was only 16, I got the very fisrt professional job of my life
-                    working as a instructor in a small computer training school. It was a pretty enriching experience
-                    where I developed not only my comunication skills, but also my passion for teaching. I left
-                    the job in 2011. <br><br>
-                    In 2020 came up the opportunity to work as a teacher in
-                    <a href="https://www.facebook.com/devisate/" target="_blank" rel="noreferrer">ETEC Antonio Devisate</a>,
-                    a public specialty school <a href="https://goo.gl/maps/7cPJ43qDuxhmdHCw6" target="_blank" rel="noreferrer">in Marília.</a> 
-                    Due to the Covid-19 pandemic, all my classes were remote until october of 2021.
-                    Throughout my carrer in ETEC I taught several topics from basic computer usage (like Microsft Office) to
-                    advanced programming (like developing a web application with Laravel) for more than 100 students
-                    from different courses, either by video or in-person lessons.
+                    <span data-language='en'>
+                        Back in 2009, when I was only 16, I got the very first job of my life
+                        working as an instructor in a small computer training school. It was a pretty enriching
+                        experience
+                        where I developed not only my communication skills, but also my passion for teaching. I left
+                        the job in 2011. <br><br>
+                        2020 came up with the opportunity to work as a teacher at
+                        <a href="https://www.facebook.com/devisate/" target="_blank" rel="noreferrer">ETEC Antonio
+                            Devisate</a>,
+                        a public specialty school in
+                        <a href="https://goo.gl/maps/7cPJ43qDuxhmdHCw6" target="_blank" rel="noreferrer">Marília.</a>.
+                        Due to the covid-19 pandemic, all of my classes were remote until October of 2021.
+                        Throughout my career in ETEC I taught several topics from basic computer usage (like Microsoft
+                        Office)
+                        to advanced programming (like developing a web application with Laravel) for more than 100
+                        students
+                        from different courses, either by video or in-person lessons.
+                    </span>
+                    <span data-language='pt'>
+                        Em 2009, quando eu tinha apenas 16 anos, consegui o primeiro emprego da minha vida trabalhando
+                        como
+                        instrutor em uma pequena escola de informática. Foi uma experiência bastante enriquecedora onde
+                        desenvolvi não só as minhas capacidades de comunicação, mas também a minha paixão pela docência.
+                        Deixei o emprego em 2011. <br><br>
+                        2020 surgiu com a oportunidade de trabalhar como professor na
+                        <a href="https://www.facebook.com/devisate/" target="_blank" rel="noreferrer">ETEC Antonio
+                            Devisate</a>,
+                        localizada na cidade de
+                        <a href="https://goo.gl/maps/7cPJ43qDuxhmdHCw6" target="_blank" rel="noreferrer">Marília,
+                            SP</a>.
+                        Devido a pandemia do covid-19, todas as minhas aulas foram remotas até outubro de 2021.
+                        Ao longo da minha carreira na ETEC ensinei diversos assuntos desde o uso básico
+                        de computadores (como o pacote Office) até programação avançada (como desenvolvimento de
+                        aplicações web com Laravel) para mais de 100 alunos de diferentes cursos,
+                        tanto por vídeo quanto por aulas presenciais.
+                    </span>
                 </p>
             </details>
 
             <div class="anchor" id="wx-computer-technician"></div>
             <details>
                 <summary>
-                    <span>Computer Technician</span>
-                    <small>2 years (click to know more)</small>
+                    <h3>
+                        <span data-language='en'>Computer Technician</span>
+                        <span data-language='pt'>Técnico em Informática</span>
+                    </h3>
+                    <small>
+                        <span data-language='en'>2 years (click to know more)</span>
+                        <span data-language='pt'>2 anos (clique para saber mais)</span>
+                    </small>
                 </summary>
                 <p>
-                    From mid 2011 to 2014, I worked as a clerk at
-                    <a href="https://www.instagram.com/mmlanhouseget/" target="_blank" rel="noreferrer">M&M Lan House</a>.
-                    Besides serving the clients, I was also responsible for software
-                    and hardware maintenance of the company's and clients' computers. Though this kind
-                    of service is not my main activity anymore, I still doing some computer maintenance
-                    jobs eventually.
+                    <span data-language='en'>
+                        From mid 2011 to 2014, I worked as a clerk at
+                        <a href="https://www.instagram.com/mmlanhouseget/" target="_blank" rel="noreferrer">M&M Lan
+                            House</a>.
+                        Besides serving the clients, I was also responsible for software
+                        and hardware maintenance of the company's and clients' computers. Though this kind
+                        of service is not my main activity anymore, I still doing some computer maintenance
+                        jobs eventually.
+                    </span>
+                    <span data-language='pt'>
+                        De meados de 2011 a 2014, trabalhei como atendente na
+                        <a href="https://www.instagram.com/mmlanhouseget/" target="_blank" rel="noreferrer">M&M Lan
+                            House</a>.
+                        Além de atender os clientes, eu também era responsável pela manutenção
+                        de software e hardware dos computadores dos clientes e da própria lan house.
+                        Embora esse tipo de serviço não seja mais minha atividade principal,
+                        ainda faço alguns trabalhos de manutenção de computadores eventualmente.
+                    </span>
                 </p>
             </details>
 
@@ -188,35 +356,76 @@
         <section id="sectionAcademicEducation">
             <h2>
                 <span class="icon material-icons-outlined">work_outline</span>
-                <small>Academic Education</small>
+                <small>
+                    <span data-language='en'>Academic Education</span>
+                    <span data-language='pt'>Formação Acadêmica</span>
+                </small>
             </h2>
 
             <div class="anchor" id="ae-sys-dev-analysis"></div>
             <details>
                 <summary>
-                    <span>System Analysis and Development</span>
-                    <small>Fatec of Lins - 2017 (click to know more)</small>
+                    <h3>
+                        <span data-language='en'>Systems Analysis and Development</span>
+                        <span data-language='pt'>Análise e Desenvolvimento de Sistemas</span>
+                    </h3>
+                    <small>
+                        <span data-language='en'>Fatec of Lins - 2017 (click to know more)</span>
+                        <span data-language='pt'>Fatec Lins - 2017 (clique para saber mais)</span>
+                    </small>
                 </summary>
                 <p>
-                    Fatec Lins is a respectable public college that offers bachelor's degree courses for free. <br>
-                    Courses with emphasis on programming like System Analysis and Development are known
-                    to be tough and that was no different in Fatec. In my class, out of 40 students only
-                    8 (including me) made it to got the diploma. <br>
-                    My Degree Final Project was a financial management desktop app for a small company located
-                    in Promissão - SP.
+                    <span data-language='en'>
+                        The <a href="https://www.instagram.com/fateclins/" target="_blank" rel="noreferrer">Fatec of
+                            Lins</a>
+                        is a respectable public college that offers bachelor's degree courses for free. <br>
+                        Courses with emphasis on programming like Systems Analysis and Development are known
+                        to be tough and that was no different in Fatec. In my class, out of 40 students only
+                        8 (including me) made it to got the diploma. <br>
+                        My Degree Final Project was a financial management desktop app for a small company located
+                        in <a href="https://goo.gl/maps/PHLFoioSnMfYg6XP7" target="_blank" rel="noreferrer">Promissão,
+                            SP</a>.
+                    </span>
+                    <span data-language='pt'>
+                        A <a href="https://www.instagram.com/fateclins/" target="_blank" rel="noreferrer">Fatec Lins</a>
+                        é uma respeitável faculdade pública que oferece cursos de graduação tecnológica gratuitos. <br>
+                        Cursos com ênfase em programação como Análise e Desenvolvimento de Sistemas são conhecidos por
+                        serem
+                        difíceis e isso não foi diferente na Fatec. Na minha turma, de 40 alunos, apenas 8 (incluindo
+                        eu)
+                        conseguiram o diploma.
+                        Meu TCC foi um aplicativo desktop de gestão financeira para uma pequena empresa localizada
+                        em <a href="https://goo.gl/maps/PHLFoioSnMfYg6XP7" target="_blank" rel="noreferrer">Promissão,
+                            SP</a>.
+                    </span>
                 </p>
             </details>
 
             <div class="anchor" id="ae-computer-technician"></div>
             <details>
                 <summary>
-                    <span>Computer Technician</span>
-                    <small>Etec of Lins - 2012 (click to know more)</small>
+                    <h3>
+                        <span data-language='en'>Computer Technician</span>
+                        <span data-language='pt'>Técnico em Informática</span>
+                    </h3>
+                    <small>
+                        <span data-language='en'>ETEC of Lins - 2012 (click to know more)</span>
+                        <span data-language='pt'>ETEC Lins - 2012 (clique para saber mais)</span>
+                    </small>
                 </summary>
                 <p>
-                    Etec Lins is a praised technical school that offers associate's degree courses for free.
-                    It was there my first contact with programming. The course took 18 months to complete
-                    and my Degree Final Project was a quiz maker game developed with Delphi.
+                    <span data-language='en'>
+                        <a href="https://www.instagram.com/etec_lins/" target="_blank" rel="noreferrer">ETEC of Lins</a>
+                        is a praised technical school that offers associate's degree courses for free.
+                        It was there my first contact with programming. The course took 18 months to complete
+                        and my Degree Final Project was a quiz maker game developed with Delphi.
+                    </span>
+                    <span data-language='pt'>
+                        A <a href="https://www.instagram.com/etec_lins/" target="_blank" rel="noreferrer">Etec Lins</a>
+                        é uma conceituada escola técnica que oferece cursos técnicos gratuitos.
+                        Foi lá o meu primeiro contato com programação. O curso durou 18 meses
+                        e meu TCC foi um jogo de criação de quiz desenvolvido com Delphi.
+                    </span>
                 </p>
             </details>
 
@@ -227,21 +436,238 @@
         <section id="sectionHardSkills" class="interactive">
             <h2>
                 <span class="icon material-icons-outlined">handyman</span>
-                <small>Hard Skills</small>
+                <small>
+                    <span data-language='en'>Hard Skills</span>
+                    <span data-language='pt'>Habilidades Técnicas</span>
+                </small>
             </h2>
             <div class="lineSkills">
-                <span class="boxSkill gold">HTML & CSS</span>
-                <span class="boxSkill gold">PHP</span>
-                <span class="boxSkill gold">Javascript</span>
-                <span class="boxSkill silver">MySQL</span>
-                <span class="boxSkill silver">GIT</span>
-                <span class="boxSkill silver">Linux</span>
-                <span class="boxSkill bronze">UX/UI</span>
-                <span class="boxSkill bronze">SEO</span>
-                <span class="boxSkill bronze">Vue</span>
-                <span class="boxSkill bronze">Docker</span>
-                <span class="boxSkill bronze">DevOps</span>
-                <span class="boxSkill bronze">Apache Cordova</span>
+
+                <div data-language='en'>
+                    <span class="boxSkill gold" data-popup-txt="
+                        My specialty. I can turn any design into code and implement it in a
+                        way that looks and feels pretty much like the original idea.
+                    ">
+                        HTML & CSS
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill gold" data-popup-txt="
+                        Minha especialidade. Eu posso transformar qualquer design em código e
+                        implementá-lo de uma maneira que se pareça e se pareça muito com a ideia original.
+                    ">
+                        HTML & CSS
+                    </span>
+                </div>
+
+                <div data-language='en'>
+                    <span class="boxSkill gold" data-popup-txt="
+                        I've been working with PHP for 5 years now.
+                        From version 5.6 to the newest PHP 8, I'm very
+                        comfortable with it's native features and when it
+                        comes to framework, Laravel is my first choice.
+                    ">
+                        PHP
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill gold" data-popup-txt="
+                        Trabalho com PHP há 5 anos. Da versão 5.6 ao mais novo PHP 8,
+                        já estou bastante acostumado com seus recursos nativos e quando
+                        se trata de framework Laravel é minha primeira escolha.
+                    ">
+                        PHP
+                    </span>
+                </div>
+
+                <div data-language='en'>
+                    <span class="boxSkill gold" data-popup-txt="
+                        My favorite programming language. JS has been part of my daily work
+                        since my first job as a software developer and I'm still getting
+                        amazed every time I find out about some cool thing that can be done
+                        with pure JavaScript.
+                    ">
+                        JavaScript
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill gold" data-popup-txt="
+                        Minha linguagem de programação favorita. JS faz parte do meu trabalho
+                        diário desde meu primeiro emprego como desenvolvedor de software e
+                        ainda me surpreendo toda vez que descubro alguma coisa legal nova
+                        que pode ser feito com JavaScript puro.
+                    ">
+                        JavaScript
+                    </span>
+                </div>
+
+                <div data-language='en'>
+                    <span class="boxSkill silver" data-popup-txt="
+                        I have a solid knowledge in relational database schemas
+                        besides DDL, DML and DQL with subqueries.
+                    ">
+                        SQL
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill silver" data-popup-txt="
+                        Possuo um sólido conhecimento em modelagem de banco de dados
+                        relacional além de DDL, DML e DQL com subqueries.
+                    ">
+                        SQL
+                    </span>
+                </div>
+    
+                <div data-language='en'>
+                    <span class="boxSkill silver" data-popup-txt="
+                        Cloning or creating repositories, managing multiple branches
+                        from different remotes and solving merge conflicts are no problem for me.
+                    ">
+                        GIT
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill silver" data-popup-txt="
+                        Clonar ou criar repositórios, gerenciar várias branches de diferentes
+                        remotes e resolver conflitos de merge não são problemas para mim.
+                    ">
+                        GIT
+                    </span>
+                </div>
+
+                <div data-language='en'>
+                    <span class="boxSkill silver" data-popup-txt="
+                        Linux distros used to be my main workstation until 2021 when I've
+                        switched to Windows 11. Why? Because WSL is much more convenient than Dual Boot
+                        for me who has to work with two different operating systems.
+                    ">
+                        Linux
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill silver" data-popup-txt="
+                        Linux costumava ser meu sistema operacional principal até 2021, quando mudei
+                        para o Windows 11.
+                        Por quê? Porque WSL é muito mais conveniente do que Dual Boot
+                        para mim que tenho que trabalhar com dois sistemas operacionais diferentes.
+                    ">
+                        Linux
+                    </span>
+                </div>
+
+                <div data-language='en'>
+                    <span class="boxSkill bronze" data-popup-txt="
+                        Though I'm not much of the creative type of person, I understand the basics concepts
+                        of a good interface well enough to be capable of making decent designs like this very
+                        one you are seeing and experiencing right now.
+                    ">
+                        UX/UI
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill bronze" data-popup-txt="
+                        Embora eu não seja muito do tipo de pessoa criativa, eu entendo os conceitos básicos
+                        de uma boa interface bem o suficiente para ser capaz de fazer designs decentes como
+                        este que você está vendo e experimentando agora.
+                    ">
+                        UX/UI
+                    </span>
+                </div>
+
+                <div data-language='en'>
+                    <span class="boxSkill bronze" data-popup-txt="
+                        I really like the versatility of Vue and that's why this framework is my favorite front
+                        end tool for single page applications. Haven't got the opportunity to work with it in
+                        professional environments yet. I also have some experience with Angular.
+                    ">
+                        Vue
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill bronze" data-popup-txt="
+                        Eu realmente gosto da versatilidade do Vue e é por isso que esse framework é minha
+                        ferramenta de front-end favorita para SPAs. Ainda não tive a oportunidade de trabalhar
+                        com ele em ambientes profissionais. Eu também tenho alguma experiência com Angular.
+                    ">
+                        Vue
+                    </span>
+                </div>
+
+                <div data-language='en'>
+                    <span class="boxSkill bronze" data-popup-txt="
+                        I've never created a container by myself, but I use one every single day in my work.
+                    ">
+                        Docker
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill bronze" data-popup-txt="
+                        Eu nunca criei um contêiner sozinho, mas uso um todos os dias no meu trabalho.
+                    ">
+                        Docker
+                    </span>
+                </div>
+
+                <div data-language='en'>
+                    <span class="boxSkill bronze" data-popup-txt="
+                        At January of 2022 I decided to host a small project to Google Cloud Platform,
+                        just to know how to do it. This is what I learned: <br><br>
+                        <ul>
+                            <li>Create and run a Linux VM Instance</li>
+                            <li>Set up an Apache Server with PHP 8 and MariaDB 10</li>
+                            <li>Manage SSH keys and connections to the VM</li>
+                            <li>Use github actions to deploy with just a push on the master branch</li>
+                            <li>Buy and config a domain (and its subdomains)</li>
+                            <li>Install a free SSL certificate with certbot</li>
+                        </ul>
+                        I know the work of a Devop goes way beyond that, but at least now I can say I know
+                        how to make a web application from creating a git repository to deploying to production.
+                    ">
+                        DevOps
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill bronze" data-popup-txt="
+                        Em janeiro de 2022 decidi hospedar um pequeno projeto no Google Cloud Platform,
+                        só para aprender como se faz. Isto é o que eu aprendi:
+                        <ul>
+                            <li>Criar e executar uma instância de VM do Linux</li>
+                            <li>Configurar um servidor Apache com PHP 8 e MariaDB 10</li>
+                            <li>Gerenciar chaves SSH e conexões com a VM</li>
+                            <li>Usar ações do github para fazer deploy com apenas um push na branch master</li>
+                            <li>Comprar e configurar um domínio (e seus subdomínios)</li>
+                            <li>Instalar um certificado SSL gratuito com certbot</li>
+                        </ul>
+                        Eu sei que o trabalho de um Devop vai muito além disso, mas pelo menos agora posso
+                        dizer que sei fazer uma aplicação web desde a criação de um repositório git até o 
+                        deploy em produção.
+                    ">
+                        DevOps
+                    </span>
+                </div>
+
+                <div data-language='en'>
+                    <span class="boxSkill bronze" data-popup-txt="
+                        As a lover of front end web applications, I find fascinating the idea of
+                        having an open source framework that allows me to build hybrid mobile
+                        apps with just HTML, CSS and JS. <br><br>
+                        But I haven't used Apache Cordova in professional projects yet, so I
+                        don't really know about its limitations.
+                    ">
+                        Apache Cordova
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill bronze" data-popup-txt="
+                        Como um apreciador de aplicações web front-end, acho fascinante a ideia de ter um
+                        framework open source que me permita construir aplicações móveis híbridas
+                        com apenas HTML, CSS e JS. <br><br>
+                        Mas ainda não usei o Apache Cordova em projetos profissionais, então não
+                        conheço suas reais limitações.
+                    ">
+                        Apache Cordova
+                    </span>
+                </div>
             </div>
         </section>
         <hr>
@@ -250,13 +676,97 @@
         <section id="sectionSoftSkills" class="interactive">
             <h2>
                 <span class="icon material-icons-outlined">handyman</span>
-                <small>Soft Skills</small>
+                <small>
+                    <div data-language='en'>Soft Skills</div>
+                    <div data-language='pt'>Habilidades Comportamentais</div>
+                </small>
             </h2>
             <div class="lineSkills">
-                <span class="boxSkill silver">Quick Learner</span>
-                <span class="boxSkill silver">Adaptative</span>
-                <span class="boxSkill silver">Goal Oriented</span>
-                <span class="boxSkill silver">Plainspoken</span>
+
+                <div data-language='en'>
+                    <span class="boxSkill silver" data-popup-txt="
+                            I know it sounds cliche, but it's true 😄. <br><br>
+                            Whenever I'm studying about some topic of my interest, it doesn't take
+                            much until I'm able to turn the theoretical idea into some practical stuff.
+                            Those things I learned about devops were all within a week, during my free time.
+                        ">
+                        Quick Learner
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill silver" data-popup-txt="
+                        Eu sei que parece clichê, mas é verdade 😄. <br><br>
+                        Sempre que estou estudando sobre algum assunto de meu interesse, não demora
+                        muito até que eu consiga transformar a ideia teórica em algo prático.
+                        Essas coisas que aprendi sobre devops foram todas dentro de uma semana,
+                        durante meu tempo livre.
+                    ">
+                        Aprendo Rápido
+                    </span>
+                </div>
+
+                <div data-language='en'>
+                    <span class="boxSkill silver" data-popup-txt="
+                            I'm used to helping people understand &quot;complex&quot; matters since 
+                            I was a kid in the elementary school. <br><br>
+                            It's not by chance that teaching is my second job and to be honest
+                            I would love to be a full time teacher, but software developers earn
+                            much more and my main objective is focusing in making money right now so
+                            I can focus in making only what I love in the future.
+                        ">
+                        Born Teacher
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill silver" data-popup-txt="
+                            Estou acostumado a ajudar as pessoas a entender assuntos &quot;complexos&quot;
+                            desde que eu era uma criança no ensino fundamental. <br><br>
+                            Não é por acaso que ensinar é meu segundo emprego e para ser sincero eu adoraria
+                            ser professor em tempo integral, mas desenvolvedores de software ganham muito
+                            mais e meu principal objetivo é focar em ganhar dinheiro agora para poder
+                            focar em fazer apenas o que eu amo no futuro.
+                        ">
+                        Professor Nato
+                    </span>
+                </div>
+
+                <div data-language='en'>
+                    <span class="boxSkill silver" data-popup-txt="
+                        Problems exists to be solved, not to be complained about. 
+                        And if there is no solution for a problem, then there is no problem.
+                    ">
+                        Poblem Solver
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill silver" data-popup-txt="
+                        Problemas existem para serem resolvidos, não para ficar reclamando sobre.
+                        E se não há solução para um problema, então não há problema.
+                    ">
+                        Resolvedor de Problemas
+                    </span>
+                </div>
+
+                <div data-language='en'>
+                    <span class="boxSkill silver" data-popup-txt="
+                            Talking is silver, listening is gold. <br><br>
+                            But when it comes the time to speak, especially in the work environment,
+                            I always like to follow these three principles:
+                            honesty, objectivity and clarity.
+                        ">
+                        Plainspoken
+                    </span>
+                </div>
+                <div data-language='pt'>
+                    <span class="boxSkill silver" data-popup-txt="
+                            Falar é prata, ouvir é ouro. Mas na hora de falar, principalmente no
+                            ambiente de trabalho, gosto sempre de seguir esses três princípios:
+                            honestidade, objetividade e clareza.
+                        ">
+                        Objetivo
+                    </span>
+                </div>
+
             </div>
         </section>
         <hr>
@@ -265,103 +775,233 @@
         <section id="sectionProfile" class="interactive">
             <h2>
                 <span class="icon material-icons-outlined">psychology</span>
-                <small>Profile</small>
+                <small>
+                    <div data-language='en'>Profile</div>
+                    <div data-language='pt'>Perfil</div>
+                </small>
             </h2>
 
-            <div class="boxTrait">
-                <div class="rowTop">
-                    <span class="far left" title="A methodical person likes to work in environments with rules and roles very well defined and prefer to do everything by the book.">Methodical</span>
-                    <span class="far right" title="Pragmatical individuals work better in more flexible environments and can improvise different solutions to different problems.">Pragmatical</span>
+            <div data-language='en'>
+                <div class="boxTrait" data-popup-title="Done is better than perfect" data-popup-txt="
+                        Patterns, paradigms and methodologies exist to avoid chaotic coding specially in large systems,
+                        but beign too methodical leads to overengineering and an unnecessarily complicated system
+                        architecture that only serves to make the developing process harder to understand and slower
+                        to deploy. <br><br>
+                        It takes some experience to understand that there is no silver bullet in software development.
+                        Adopting a more pragmatic approach to problem solving and being able to use the right tool to
+                        the right job is the key to build a dynamic and sustainable software.
+                    ">
+                    <div class="rowTop">
+                        <span class="far left"
+                            title="A methodical person likes to work in environments with rules and roles very well defined and prefer to do everything by the book.">Methodical</span>
+                        <span class="far right"
+                            title="Pragmatic individuals work better in more flexible environments and can improvise different solutions to different problems.">Pragmatical</span>
+                    </div>
+                    <label class="rowBottom">
+                        <input type="range" step="1" min="0" max="4" value="3">
+                    </label>
                 </div>
-                <label class="rowBottom">
-                    <input type="range" step="1" min="0" max="4" value="3">
-                </label>
+
+                <div class="boxTrait" data-popup-title="A good portfolio is worth more than a diploma" data-popup-txt="
+                        80% of everything I know about software development came from professional experience
+                        and working on personal projects (many times, just for the sake of learning). <br><br>
+                        Don't get me wrong, I reckognize the importance of formal education especially for
+                        begginers in software programming, but I also know that years of professional experience
+                        and projects on github can say much more about you as a developer than any diploma from
+                        any university.
+                    ">
+                    <div class="rowTop">
+                        <span class="far left"
+                            title="The academic ones prefer to improve their knowledge through certificated courses and other formal educational methods.">Academical</span>
+                        <span class="far right"
+                            title="A self learner person seeks to grow their knowledge by learning through the process of developing its own personal and professional projects.">Self
+                            Learner</span>
+                    </div>
+                    <label class="rowBottom">
+                        <input type="range" step="1" min="0" max="4" value="4">
+                    </label>
+                </div>
+
+                <div class="boxTrait" data-popup-title="T shaped professional" data-popup-txt="
+                        One thing I've learned from my working experience is that if you wanna stand out
+                        in the job market, you gotta be really good in at leats one relevant hard skill.
+                        And with really good I mean beign a specialist: an expert on a specific topic.
+                        Someone who people can rely on to bring effective solutions to complex problems. <br><br>
+                        Another thing I've also learned about software development is that just knowing
+                        about a few limited subjects is not enough.
+                        You gotta have a good notion of everything that goes on the matter of software development:
+                        git, database, back-end, front-end, security measures, devops even ui/ux. <br><br>
+                        Of course there is not an expert in everything, there is no &quot;Master of All Trades&quot;,
+                        but knowing a little bit of every topic while being an expert on a specific one is what
+                        makes me the &quot;T shaped professional&quot; this job market made me be.
+                    ">
+                    <div class="rowTop">
+                        <span class="far left"
+                            title="Generalists are good in getting a macro view of the situation by getting to know a little bit of everything.">Generalist</span>
+                        <span class="far right"
+                            title="Specialists seek to be a reference on a specific topic by mastering the skills needed on the matter.">Specialist</span>
+                    </div>
+                    <label class="rowBottom">
+                        <input type="range" step="1" min="0" max="4" value="2">
+                    </label>
+                </div>
             </div>
 
-            <div class="boxTrait">
-                <div class="rowTop">
-                    <span class="far left" title="The academical ones prefer to improve their knowledge through certificated courses and other formal educational methods.">Academical</span>
-                    <span class="far right" title="A self learner person seeks to grow their knowledge through the day by day both inside and outside the work environment.">Self Learner</span>
+            <div data-language='pt'>
+                <div class="boxTrait" data-popup-title="Feito é melhor que perfeito" data-popup-txt="
+                    Padrões, paradigmas e metodologias existem para evitar a codificação caótica,
+                    especialmente em grandes sistemas, mas ser metódico demais acaba levando ao
+                    overengineering e à uma arquitetura de sistema desnecessariamente complicada que
+                    só serve para tornar o processo de desenvolvimento mais difícil de entender
+                    e mais lento de publicar em produção. <br><br>
+                    É preciso experiência para entender que não há bala de prata no
+                    desenvolvimento de software. Adotar uma abordagem mais pragmática para a
+                    resolução de problemas e ser capaz de usar a ferramenta certa para o trabalho
+                    certo é a chave para construir um software dinâmico e sustentável.
+                ">
+                    <div class="rowTop">
+                        <span class="far left"
+                            title="Uma pessoa metódica gosta de trabalhar em ambientes com regras e papéis muito bem definidos e preferem fazer tudo conforme os padrões pré estabelecidos.">Metódico</span>
+                        <span class="far right"
+                            title="Indivíduos pragmáticos trabalham melhor em ambientes mais flexíveis e conseguem improvisar diferentes soluções para diferentes problemas.">Pragmático</span>
+                    </div>
+                    <label class="rowBottom">
+                        <input type="range" step="1" min="0" max="4" value="3">
+                    </label>
                 </div>
-                <label class="rowBottom">
-                    <input type="range" step="1" min="0" max="4" value="4">
-                </label>
-            </div>
 
-            <div class="boxTrait">
-                <div class="rowTop">
-                    <span class="far left" title="Conservatives rely on tools and methods that have already passed the test of time.">Conservative</span>
-                    <span class="far right" title="Innovative people don't fear going against the common sense to try new things.">Innovative</span>
+                <div class="boxTrait" data-popup-title="Um bom portfólio vale mais que um diploma" data-popup-txt="
+                        80% de tudo que sei sobre desenvolvimento de software veio de experiência profissional e de
+                        trabalhos em projetos pessoais (muitas vezes, apenas para aprender). <br><br>
+                        Não me entenda mal, reconheço a importância da educação formal especialmente para iniciantes
+                        em programação de software, mas também sei que anos de experiência profissional e projetos
+                        no github podem dizer muito mais sobre você como desenvolvedor do que qualquer diploma de
+                        qualquer universidade.
+                    ">
+                    <div class="rowTop">
+                        <span class="far left"
+                            title="Os acadêmicos preferem aprimorar seus conhecimentos por meio de cursos certificados e outros métodos formais de educação.">Acadêmico</span>
+                        <span class="far right"
+                            title="Uma pessoa autodidata busca aumentar seu conhecimento aprendendo através do desenvolvimento de seus próprios projetos pessoais e profissionais.">Autodidata</span>
+                    </div>
+                    <label class="rowBottom">
+                        <input type="range" step="1" min="0" max="4" value="4">
+                    </label>
                 </div>
-                <label class="rowBottom">
-                    <input type="range" step="1" min="0" max="4" value="3">
-                </label>
-            </div>
 
-            <div class="boxTrait">
-                <div class="rowTop">
-                    <span class="far left" title="Generalists are good in getting a macro view of the situation by getting to know a little bit of everything.">Generalist</span>
-                    <span class="far right" title="Specialists seek to be a reference on a specific topic by mastering the skills needed on the matter.">Specialist</span>
+                <div class="boxTrait" data-popup-title="Profissional em T" data-popup-txt="
+                        Uma coisa que aprendi com minha experiência de trabalho é que, se você quer se destacar no mercado,
+                        você precisa ser muito bom em pelo menos uma habilidade relevante. E com muito bom eu quero dizer
+                        ser um especialista em determinado assunto. Alguém em quem as pessoas podem confiar na hora de trazer
+                        soluções eficazes para problemas complexos. <br><br>
+                        Outra coisa que também aprendi sobre desenvolvimento de software é que saber apenas sobre alguns
+                        assuntos limitados não é suficiente. Você tem que ter uma boa noção de tudo o que envolve o
+                        processo de desenvolvimento de software: git, banco de dados, back-end, front-end, medidas de segurança,
+                        devops até mesmo ui/ux. <br><br>
+                        Claro que não existe especialista de tudo, mas saber um pouco de cada assunto sem deixar de ser um
+                        expert em um assunto específico é o que me torna o &quot;Profissional em T&quot; que esse próprio
+                        mercado de trabalho me fez ser.
+                    ">
+                    <div class="rowTop">
+                        <span class="far left"
+                            title="Os generalistas são bons em obter uma visão macro da situação, conhecendo um pouco de tudo.">Generalista</span>
+                        <span class="far right"
+                            title="Os especialistas buscam ser referência em um tema específico, dominando as habilidades necessárias sobre o assunto.">Especialista</span>
+                    </div>
+                    <label class="rowBottom">
+                        <input type="range" step="1" min="0" max="4" value="2">
+                    </label>
                 </div>
-                <label class="rowBottom">
-                    <input type="range" step="1" min="0" max="4" value="2">
-                </label>
             </div>
 
         </section>
         <hr>
 
         <div class="anchor" id="my-likes-and-dislikes"></div>
-        <section id="sectionUpDownDev">
+        <section id="sectionMyLikesAndDislikes">
             <h2>
                 <span class="icon material-icons-outlined">thumbs_up_down</span>
-                <small>My likes and dislikes</small>
+                <small>
+                    <div data-language='en'>My Likes and Dislikes</div>
+                    <div data-language='pt'>Coisas que gosto e não gosto</div>
+                </small>
             </h2>
 
             <div class="row">
                 <div class="col likes">
                     <div class="item">
                         <span class="icon material-icons-outlined">thumb_up</span>
-                        <span>Work on new projects</span>
+                        <div>
+                            <div data-language='en'>Work on new projects</div>
+                            <div data-language='pt'>Trabalhar em novos projetos</div>
+                        </div>
                     </div>
                     <div class="item">
                         <span class="icon material-icons-outlined">thumb_up</span>
-                        <span>Learn new technologies</span>
+                        <div>
+                            <div data-language='en'>Learn new technologies</div>
+                            <div data-language='pt'>Aprender novas tecnologias</div>
+                        </div>
                     </div>
                     <div class="item">
                         <span class="icon material-icons-outlined">thumb_up</span>
-                        <span>Implement my front-end skills (especially CSS)</span>
+                        <div>
+                            <div data-language='en'>Implement my front-end skills (especially CSS)</div>
+                            <div data-language='pt'>Implementar minhas habilidades em front-end (principalmente CSS)</div>
+                        </div>
                     </div>
                     <div class="item">
                         <span class="icon material-icons-outlined">thumb_up</span>
-                        <span>Share my knwoledge with others</span>
+                        <div>
+                            <div data-language='en'>Share my knowledge with others</div>
+                            <div data-language='pt'>Compartilhar conhecimento com os outros</div>
+                        </div>
+                        <span></span>
                     </div>
                     <div class="item">
                         <span class="icon material-icons-outlined">thumb_up</span>
-                        <span>Being able to work remotely</span>
+                        <div>
+                            <div data-language='en'>Being able to work remotely</div>
+                            <div data-language='pt'>Poder trabalhar remotamente</div>
+                        </div>
                     </div>
                     <div class="item">
                         <span class="icon material-icons-outlined">thumb_up</span>
-                        <span>Dark Theme</span>
+                        <div>
+                            <div data-language='en'>Dark mode</div>
+                            <div data-language='pt'>Modo escuro</div>
+                        </div>
                     </div>
                 </div>
-    
+
                 <div class="col dislikes">
                     <div class="item">
                         <span class="icon material-icons-outlined">thumb_down</span>
-                        <span>Poorly written codes</span>
+                        <div>
+                            <div data-language='en'>Poorly written codes</div>
+                            <div data-language='pt'>Código mau escrito</div>
+                        </div>
                     </div>
                     <div class="item">
                         <span class="icon material-icons-outlined">thumb_down</span>
-                        <span>Unnecessary complexity in code implementation</span>
+                        <div>
+                            <div data-language='en'>Unnecessary complexity in code implementation</div>
+                            <div data-language='pt'>Código desnecessariamente complexo</div>
+                        </div>
                     </div>
                     <div class="item">
                         <span class="icon material-icons-outlined">thumb_down</span>
-                        <span>Dated programming languages</span>
+                        <div>
+                            <div data-language='en'>Dated programming languages</div>
+                            <div data-language='pt'>Linguagens de programação ultrapassadas</div>
+                        </div>
                     </div>
                     <div class="item">
                         <span class="icon material-icons-outlined">thumb_down</span>
-                        <span>Obsolete technologies and frameworks</span>
+                        <div>
+                            <div data-language='en'>Obsolete technologies and frameworks</div>
+                            <div data-language='pt'>Tecnologias e frameworks obsoletos</div>
+                        </div>
                     </div>
                     <div class="item">
                         <span class="icon material-icons-outlined">thumb_down</span>
@@ -373,21 +1013,34 @@
         </section>
         <hr>
 
-        <div class="anchor" id="additional-info"></div>
+        <div class="anchor" id="important-note"></div>
         <section id="sectionAdditionalInfo">
             <h2>
                 <span class="icon material-icons-outlined">article</span>
-                <small>Additional Info</small>
+                <small>
+                    <span data-language='en'>Important note</span>
+                    <span data-language='pt'>Nota importante</span>
+                </small>
             </h2>
             <p>
-                I built this web page entirely from scratch with no use of third party plugins, layouts or frameworks.
-                That means 100% of the code here was implemented solely by me and that was on purpose. <br>
-                In adition to a interactive résumé, this page is also intended to show you how I code
-                in front-end enviroments. Just start inspecting this page with the Dev Tools of your browser if you
-                are insterest in seeing my HTML/CSS/JS skills implemented for real. <br>
-                No minification or obfuscation was made so you can inspect the page with easiness. <br>
-                If you wanna see more of my code work, please visit my github page at:
-                <a href="https://github.com/lucian-alves-dev" target="_blank"  rel="noreferrer">github.com/lucian-alves-dev</a>
+                <span data-language='en'>
+                    I built this web page entirely from scratch with no use of third party plugins, layouts or frameworks.
+                    Even the design was made all by myself. <br>
+                    In adition to an interactive resume, this page is also intended to show you how I code
+                    front-end projects like this. So if you are interested,
+                    <a href="https://github.com/lucian-alves-dev/cv" target="_blank" rel="noreferrer">
+                        you can check out the source code of this site clicking here.
+                    </a>
+                </span>
+                <span data-language='pt'>
+                    Eu construí esta página inteiramente do zero, sem o uso de plugins, layouts ou
+                    frameworks de terceiros. Até mesmo o design foi feito por mim. <br>
+                    Além de um currículo interativo, esta página também pretende mostrar como eu codifico
+                    projetos front-end. Então, se você estiver interessado,
+                    <a href="https://github.com/lucian-alves-dev/cv" target="_blank" rel="noreferrer">
+                        você pode conferir o código-fonte deste site clicando aqui.
+                    </a>
+                </span>
             </p>
             <br>
         </section>
@@ -401,4 +1054,5 @@
         </footer>
     </div>
 </body>
+
 </html>

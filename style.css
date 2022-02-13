@@ -29,8 +29,12 @@ html {
 
 body {
     margin: 0;
-    padding-top: 122px;
+    padding-top: 80px;
 }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgb(255 255 255 / 25%);  }
 
 hr {
     margin: 20px;
@@ -39,7 +43,6 @@ hr {
 
 p {
     margin: 20px;
-    text-align: justify;
 }
 
 p br {
@@ -64,6 +67,10 @@ a {
 
 a:hover {
     color: var(--secondary-bg-color);
+}
+
+section p a {
+    text-decoration: underline;
 }
 
 h2 {
@@ -92,7 +99,8 @@ details:hover {
     background-color: rgb(255 255 255 / 5%);
 }
 
-details span {
+details h3 {
+    margin: 0;
     font-size: 150%;
 }
 
@@ -105,7 +113,6 @@ details p {
     margin-top: 30px;
     border-top: 1px solid white;
     padding-top: 20px;
-    text-align: justify;
 }
 
 summary {
@@ -135,7 +142,6 @@ input[type='range'] {
     -webkit-appearance: none;
     width: 100%;
     height: 1px;
-    /* background: linear-gradient(90deg, white 50%, transparent 50%); */
     background: white;
     background-size: 22px;
     outline: none;
@@ -180,8 +186,8 @@ input[type='range']::before {
 
 .anchor {
     position: relative;
-    padding-top: 100px;
-    margin-top: -100px;
+    padding-top: 70px;
+    margin-top: -70px;
     z-index: -1;
 }
 
@@ -191,8 +197,7 @@ input[type='range']::before {
     left: 0;
     z-index: 10;
     width: 100%;
-    background-color: #bba558b8;
-    background-image: linear-gradient(45deg, rgb(255 255 255 / 10%), transparent);
+    background-color: rgb(0 0 0 / 60%);
     color: var(--secondary-txt-color);
     box-shadow: 0px 1px 6px 1px black;
     backdrop-filter: blur(4px);
@@ -202,7 +207,7 @@ input[type='range']::before {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 #pageHeader > * {
@@ -217,8 +222,7 @@ input[type='range']::before {
 #pageHeader .right { justify-content: right; }
 
 #pageHeader h1 {
-    font-size: 175%;
-    text-transform: uppercase;
+    font-size: 150%;
     flex-grow: 1;
     margin: 0;
 }
@@ -228,7 +232,10 @@ input[type='range']::before {
     font-size: 50px;
 }
 
-section { padding: 10px 0; }
+section {
+    overflow-x: hidden;
+    padding: 10px 0;
+}
 
 section.interactive:hover h2::after {
     content: "(click to know more)";
@@ -256,15 +263,22 @@ section.interactive:hover h2::after {
     margin: 10px;
 }
 
-#sectionBasicData figcaption {
-    display: none;
+#sectionBasicData #figPhoto {
+    position: relative;
+    background-image: linear-gradient(0deg, #ffffff1a, transparent);
+    border-bottom: 3px solid var(--secondary-bg-color);
 }
 
 #sectionBasicData #imgPhoto {
     width: 250px;
     height: 250px;
-    border-radius: 10px;
     object-fit: cover;
+    filter: drop-shadow(2px 0px 5px rgb(0 0 0 / 60%));
+    margin-bottom: -10px;
+}
+
+#sectionBasicData figcaption {
+    display: none;
 }
 
 #sectionBasicData .side-info {
@@ -287,12 +301,6 @@ section.interactive:hover h2::after {
 #sectionBasicData .col .piece small {
     font-size: 90%;
 }
-
-#sectionUpDownDev a {
-    text-decoration: underline;
-}
-
-
 
 .lineSkills {
     display: flex;
@@ -347,6 +355,7 @@ section.interactive:hover h2::after {
 
 .boxTrait .rowTop .far {
     flex-grow: 1;
+    margin-bottom: 20px;
 }
 
 .boxTrait .rowTop .far.left { text-align: left; }
@@ -354,7 +363,7 @@ section.interactive:hover h2::after {
 
 .boxTrait .rowBottom {
     padding: 20px;
-    margin-top: -50px;
+    margin-top: -70px;
     z-index: -1;
 }
 
@@ -362,53 +371,53 @@ section.interactive:hover h2::after {
     pointer-events: none;
 }
 
-#sectionUpDownDev .row {
+#sectionMyLikesAndDislikes .row {
     display: flex;
     flex-flow: row wrap;
 }
 
-#sectionUpDownDev .row .col {
+#sectionMyLikesAndDislikes .row .col {
     display: flex;
     flex-direction: column;
     padding: 10px;
     flex: 1 1 450px;
 }
 
-#sectionUpDownDev .row .col > * {
+#sectionMyLikesAndDislikes .row .col > * {
     margin: 10px
 }
 
-#sectionUpDownDev .row .col.likes {
+#sectionMyLikesAndDislikes .row .col.likes {
     align-items: flex-start;
     text-align: left;
 }
 
-#sectionUpDownDev .row .col.dislikes {
+#sectionMyLikesAndDislikes .row .col.dislikes {
     align-items: flex-end;
     text-align: right;
 }
 
-#sectionUpDownDev .row .col.dislikes .item {
+#sectionMyLikesAndDislikes .row .col.dislikes .item {
     flex-direction: row-reverse;
 }
 
-#sectionUpDownDev .row .col.likes .icon {
+#sectionMyLikesAndDislikes .row .col.likes .icon {
     color: var(--green);
 }
 
-#sectionUpDownDev .row .col.dislikes .icon {
+#sectionMyLikesAndDislikes .row .col.dislikes .icon {
     color: var(--red);
     margin-left: 20px;
     margin-right: 0;
 }
 
-#sectionUpDownDev .item {
+#sectionMyLikesAndDislikes .item {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-#sectionUpDownDev .item .icon {
+#sectionMyLikesAndDislikes .item .icon {
     font-size: 30px;
     margin-right: 20px;
 }
@@ -416,6 +425,9 @@ section.interactive:hover h2::after {
 .boxMenu {
     position: relative;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .boxMenu .list {
@@ -423,7 +435,7 @@ section.interactive:hover h2::after {
     transition: 0.3s;
     position: absolute;
     right: 0;
-    top: calc(100% + 21px);
+    top: calc(100% + 10px);
     max-width: 0;
     max-height: 0;
 }
@@ -445,6 +457,8 @@ section.interactive:hover h2::after {
     padding: 15px 25px;
     text-align: right;
     font-size: 80%;
+    overflow-y: auto;
+    max-height: calc(100vh - 80px);
 }
 
 .boxMenu .list nav > a {
@@ -455,6 +469,32 @@ section.interactive:hover h2::after {
 
 .boxMenu .list nav > a:hover {
     color: var(--secondary-bg-color);
+}
+
+.box-lang-selector {
+    display: flex;
+    flex-direction: row;
+    font-size: 60%;
+    text-transform: uppercase;
+    cursor: default;
+    opacity: 0.8;
+}
+
+.box-lang-selector > * + * {
+    margin-left: 10px;
+}
+
+.box-lang-selector label {
+    cursor: pointer;
+}
+
+.box-lang-selector label input {
+    display: none;
+}
+
+.box-lang-selector label input:checked ~ span {
+    color: var(--secondary-bg-color);
+    text-decoration: underline;
 }
 
 .bgFooter {
@@ -476,6 +516,63 @@ footer > * {
 footer .center {
     flex-grow: 1;
 }
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+    padding: 20px;
+}
+
+.overlay .popup {
+    border: 2px solid #FFF;
+    border-radius: 10px;
+    background-color: black;
+}
+
+.overlay .popup .header {
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.overlay .popup .header .title {
+    flex-grow: 1;
+    padding: 20px;
+    font-size: 70%;
+}
+
+.overlay .popup .header .btnClose {
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.overlay .popup .header .btnClose:hover {
+    color: red;
+}
+
+.overlay .popup .body {
+    padding: 20px;
+    padding-top: 0;
+    background-color: transparent;
+    color: #FFF;
+    text-align: left;
+    max-width: 800px;
+    max-height: calc(100vh - 110px);
+    overflow-y: auto;
+}
+
+.popup-title, .popup-txt { display: none; }
 
 @media only screen and (max-width: 900px)
 {

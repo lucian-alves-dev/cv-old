@@ -1,0 +1,154 @@
+@keyframes animFadeInFromLeft {
+    0% { opacity: 0; transform: translateX(-10%); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes animFadeInFromRight {
+    0% { opacity: 0; transform: translateX(10%); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes animFadeInFromUp {
+    0% { opacity: 0; transform: translateY(-10%); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes animFadeInFromDown {
+    0% { opacity: 0; transform: translateY(10%); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes animGrow {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+@keyframes animWiden {
+    0% { max-width: 0%; }
+    100% { max-width: 100%; }
+}
+
+@keyframes animStretch {
+    0% { transform: rotateX(90deg); }
+    100% { max-width: rotateX(0deg); }
+}
+
+@keyframes animFigPhoto {
+    0% { height: 0; }
+    100% { height: 100%; }
+}
+
+#pageHeader h1,
+#pageHeader .boxMenu {
+    animation: animFadeInFromUp 1s backwards paused;
+}
+
+#figPhoto {
+    animation: animFigPhoto 1.8s backwards paused;
+    overflow-y: hidden;
+}
+
+#sectionBasicData .side-info .piece {
+    animation: animFadeInFromUp 1s backwards paused;
+}
+
+#sectionBasicData .side-info .col:nth-child(1) .piece:nth-child(1) { animation-delay: 0.1s; }
+#sectionBasicData .side-info .col:nth-child(1) .piece:nth-child(2) { animation-delay: 0.2s; }
+#sectionBasicData .side-info .col:nth-child(1) .piece:nth-child(3) { animation-delay: 0.3s; }
+#sectionBasicData .side-info .col:nth-child(1) .piece:nth-child(4) { animation-delay: 0.4s; }
+#sectionBasicData .side-info .col:nth-child(2) .piece:nth-child(1) { animation-delay: 0.5s; }
+#sectionBasicData .side-info .col:nth-child(2) .piece:nth-child(2) { animation-delay: 0.6s; }
+#sectionBasicData .side-info .col:nth-child(2) .piece:nth-child(3) { animation-delay: 0.7s; }
+#sectionBasicData .side-info .col:nth-child(2) .piece:nth-child(4) { animation-delay: 0.8s; }
+
+#sectionAboutMe p {
+    animation: animFadeInFromUp 1s backwards paused;
+}
+
+section h2 small,
+section h2 .icon {
+    animation-duration: 1s;
+    animation-fill-mode: backwards paused;
+}
+
+section h2 small { animation: animFadeInFromRight; }
+section h2 .icon { animation: animFadeInFromLeft; }
+
+section details {
+    animation: animStretch 1s backwards paused;
+}
+
+section details:nth-of-type(1) { animation-delay: 0.25s; }
+section details:nth-of-type(2) { animation-delay: 0.5s; }
+section details:nth-of-type(3) { animation-delay: 0.75s; }
+section details:nth-of-type(4) { animation-delay: 1s; }
+
+.lineSkills .boxSkill {
+    animation: animGrow 0.5s backwards paused;
+}
+
+.lineSkills > div:nth-child(1) .boxSkill { animation-delay:  0.1s; }
+.lineSkills > div:nth-child(2) .boxSkill { animation-delay:  0.1s; }
+.lineSkills > div:nth-child(3) .boxSkill { animation-delay:  0.2s; }
+.lineSkills > div:nth-child(4) .boxSkill { animation-delay:  0.2s; }
+.lineSkills > div:nth-child(5) .boxSkill { animation-delay:  0.3s; }
+.lineSkills > div:nth-child(6) .boxSkill { animation-delay:  0.3s; }
+.lineSkills > div:nth-child(7) .boxSkill { animation-delay:  0.4s; }
+.lineSkills > div:nth-child(8) .boxSkill { animation-delay:  0.4s; }
+.lineSkills > div:nth-child(9) .boxSkill { animation-delay:  0.5s; }
+.lineSkills > div:nth-child(10) .boxSkill { animation-delay: 0.5s; }
+.lineSkills > div:nth-child(11) .boxSkill { animation-delay: 0.6s; }
+.lineSkills > div:nth-child(12) .boxSkill { animation-delay: 0.6s; }
+.lineSkills > div:nth-child(13) .boxSkill { animation-delay: 0.7s; }
+.lineSkills > div:nth-child(14) .boxSkill { animation-delay: 0.8s; }
+.lineSkills > div:nth-child(15) .boxSkill { animation-delay: 0.8s; }
+.lineSkills > div:nth-child(16) .boxSkill { animation-delay: 0.8s; }
+.lineSkills > div:nth-child(17) .boxSkill { animation-delay: 0.9s; }
+.lineSkills > div:nth-child(18) .boxSkill { animation-delay: 0.9s; }
+.lineSkills > div:nth-child(19) .boxSkill { animation-delay: 1s; }
+.lineSkills > div:nth-child(20) .boxSkill { animation-delay: 1s; }
+.lineSkills > div:nth-child(21) .boxSkill { animation-delay: 1.1s; }
+.lineSkills > div:nth-child(22) .boxSkill { animation-delay: 1.1s; }
+
+.boxTrait {
+    overflow-x: hidden;
+    margin: 0 auto;
+    animation: animWiden 2s backwards paused;
+}
+
+.boxTrait:nth-of-type(1) { animation-delay: 0.25s; }
+.boxTrait:nth-of-type(2) { animation-delay: 0.5s; }
+.boxTrait:nth-of-type(3) { animation-delay: 0.75s; }
+.boxTrait:nth-of-type(4) { animation-delay: 1s; }
+
+#sectionMyLikesAndDislikes .col.likes .item { animation: animFadeInFromLeft 1s backwards paused; }
+#sectionMyLikesAndDislikes .col.dislikes .item { animation: animFadeInFromRight 1s backwards paused; }
+
+#sectionMyLikesAndDislikes .col .item:nth-of-type(1) { animation-delay: 0.1s; }
+#sectionMyLikesAndDislikes .col .item:nth-of-type(2) { animation-delay: 0.2s; }
+#sectionMyLikesAndDislikes .col .item:nth-of-type(3) { animation-delay: 0.3s; }
+#sectionMyLikesAndDislikes .col .item:nth-of-type(4) { animation-delay: 0.4s; }
+#sectionMyLikesAndDislikes .col .item:nth-of-type(5) { animation-delay: 0.5s; }
+#sectionMyLikesAndDislikes .col .item:nth-of-type(6) { animation-delay: 0.6s; }
+#sectionMyLikesAndDislikes .col .item:nth-of-type(7) { animation-delay: 0.7s; }
+#sectionMyLikesAndDislikes .col .item:nth-of-type(8) { animation-delay: 0.8s; }
+
+#sectionAdditionalInfo p {
+    animation: animFadeInFromUp 1s backwards paused;
+}
+
+#pageHeader.animate .boxMenu,
+#pageHeader.animate h1,
+section.animate #figPhoto,
+#sectionBasicData.animate .side-info .piece,
+#sectionAboutMe.animate p,
+section.animate  h2 .icon,
+section.animate  h2 small,
+section.animate  details,
+section.animate .lineSkills .boxSkill,
+section.animate .boxTrait,
+#sectionMyLikesAndDislikes.animate  .col.dislikes .item,
+#sectionMyLikesAndDislikes.animate  .col.likes .item,
+#sectionAdditionalInfo.animate  p {
+    animation-play-state: running;
+}
