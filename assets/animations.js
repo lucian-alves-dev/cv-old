@@ -1,7 +1,7 @@
 function isElementInViewport (el)
 {
     let rect = el.getBoundingClientRect();
-    return rect.y < window.innerHeight * 0.5;
+    return (rect.y + (el.clientHeight * 0.5)) < window.innerHeight;
 }
 
 function wokeAnimation() {
