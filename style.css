@@ -76,7 +76,7 @@ section p a {
 h2 {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
     font-size: 200%;
     margin: 20px;
@@ -85,6 +85,7 @@ h2 {
 
 h2 .icon {
     font-size: 50px;
+    max-width: 50px;
     margin-right: 20px;
 }
 
@@ -239,11 +240,11 @@ section {
 
 section.interactive:hover h2::after {
     content: "(click to know more)";
-    position: absolute;
-    right: 0;
     color: white;
     opacity: 0.5;
     font-size: 40%;
+    margin-left: 10px;
+    margin-bottom: -7px;
 }
 
 #sectionBasicData {
@@ -601,5 +602,6 @@ footer .center {
 
     h2 .icon {
         font-size: 35px;
+        max-width: 35px;
     }
 }

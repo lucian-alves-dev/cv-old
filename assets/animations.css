@@ -68,7 +68,7 @@
 section h2 small,
 section h2 .icon {
     animation-duration: 1s;
-    animation-fill-mode: backwards paused;
+    animation-fill-mode: backwards;
 }
 
 section h2 small { animation: animFadeInFromRight; }
